@@ -84,8 +84,7 @@ h2 {
     text-transform: capitalize;
 
     transition: background-color 0.2s, color 0.2s;
-
-    vertical-align: middle;
+    line-height: 50px;
 }
 #menubar li:last-child {
 	border-right: none;
