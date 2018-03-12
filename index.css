@@ -1,67 +1,29 @@
 /* CSS */
 
-/* 
-body, input {
-	background-color: #FFFDD0;
-	font-family: 'Quattrocento Sans', sans-serif;
+/* Root */
+:root {
+	--headerBar: #4A3;
+	--btnHilight: #072;
+	--btnBorder: var(--headerTop);
+	--menuBorder: #333;
+	--headerTop: #029;
+	--mainColor: #EFF;
+	--btnText: #444;
+
+	--h1font: "PT Sans", sans-serif;
+	--h2font: "PT Sans", sans-serif;
 }
-input {
-	border: 1px solid darkgray;
-}
-table {
-	border: 2px solid blue;
-	text-align: center;
-	width: 100%;
-	margin-top: 20px;
-}
-table td {
-	padding: 5px;
-}
-table thead {
-	background-color: lightgray;
-}
-table tbody {
-	background-color: lightblue;
-}
-input {
-	width: 90%;
-}
-.header, thead {
-	font-weight: bold;
-	min-width: 150px;
-}
-.leftCol {
-	font-weight: bold;
-}
-#submit {
-	background-color: lightgray;
-	color: black;
-	font-weight: bold;
-	font-size: 1em;
-	border: 2px solid blue;
-	margin: 25px auto;
-	padding: 10px 50px;
-}
-#submit:hover {
-	background-color: lightblue;
-}
-#summative td {
-	width: 25%;
-}
-#masses td {
-	width: 50%;
-}
-*/
+
 
 /* Tags */
 body {
-	background-color: #FEE;
+	background-color: var(--mainColor);
 	font-family: "PT Sans", sans-serif;
 	margin: 0px;
 }
 
 h1 {
-	font: 2em "PT Sans", sans-serif;
+	font: 2em var(--h1font);
 	margin: 0;
 }
 
@@ -76,21 +38,21 @@ h2 {
 
 /* IDs */
 #header {
-	background-color: #900;
+	background-color: var(--headerTop);
 	color: white;
 
-	padding: 10px 10px;
+	padding: 10px 0;
 	margin: 0px;
 
 	text-align: center;
-
-	border: 2px solid ;
-	border-bottom: 2px solid white;
+	vertical-align: middle;
 }
 
 #menubar {
-	border: 2px solid blue;
+	border-top: 2px solid var(--menuBorder);
+	border-bottom: 2px solid var(--menuBorder);
 	height: 50px;
+	background-color: var(--headerBar);
 }
 
 #menubar ul {
@@ -99,28 +61,44 @@ h2 {
     padding: 0;
 
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 #menubar li {
-    float: left;
-    display: block;
+	box-sizing: border-box;
+
+    display: inline-block;
     padding: auto;
 
     height: 50px;
     width: 25%;
 
-    border-left: 2.5px solid brown;
-    border-right: 2.5px solid brown;
+    margin: 0;
 
-    background-color: #B69B4C;
+    border-right: 1px solid var(--btnBorder);
+    border-left: 1px solid var(--btnBorder);
+    background-color: var(--headerBar);
+
+    color: var(--btnText);
+    font: 1.5em var(--h2font);
+    text-transform: capitalize;
+
+    transition: background-color 0.2s, color 0.2s;
+
+    vertical-align: middle;
+}
+#menubar li:last-child {
+	border-right: none;
+}
+#menubar li:first-child {
+	border-left: none;
+}
+#menubar li:hover {
+	background-color: var(--btnHilight);
+	color: white;
 }
 
 #subheader {
-
 	margin: 0px;
 	padding: 10px 10px;
-
-	border: 1px dashed black;
-
 }
