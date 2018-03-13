@@ -9,9 +9,21 @@
 	--headerTop: #029;
 	--mainColor: #EFF;
 	--btnText: #444;
+	--selectTxt: white;
+	--selectHi: #392;
 
 	--h1font: "PT Sans", sans-serif;
 	--h2font: "PT Sans", sans-serif;
+}
+
+/* Settings */
+::selection {
+	color: var(--selectTxt);
+	background-color: var(--selectHi);
+}
+::-moz-selection { /* Code for Firefox */
+    color: var(--selectTxt);
+	background-color: var(--selectHi);
 }
 
 
@@ -91,6 +103,9 @@ h2 {
 }
 #menubar li:first-child {
 	border-left: none;
+}
+#menubar li::first-letter {
+	font-size: xx-large;
 }
 #menubar li:hover {
 	background-color: var(--btnHilight);
