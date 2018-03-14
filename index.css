@@ -16,17 +16,6 @@
 	--h2font: "PT Sans", sans-serif;
 }
 
-/* Settings */
-::selection {
-	color: var(--selectTxt);
-	background-color: var(--selectHi);
-}
-::-moz-selection { /* Code for Firefox */
-    color: var(--selectTxt);
-	background-color: var(--selectHi);
-}
-
-
 /* Tags */
 body {
 	background-color: var(--mainColor);
@@ -115,4 +104,15 @@ h2 {
 #subheader {
 	margin: 0px;
 	padding: 10px 10px;
+}
+
+
+/* Settings */
+::selection {
+	color: var(--selectTxt);
+	background-color: var(--selectHi);
+}
+::-moz-selection { /* Code for Firefox */
+    color: var(--selectTxt);
+	background-color: var(--selectHi);
 }
