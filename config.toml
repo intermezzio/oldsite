@@ -41,7 +41,7 @@ theme = "hugo-creative-theme"
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Welcome to my site!"
-		subtitle   = "[Lorem](//ddg.gg) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
+		subtitle   = "Please forgive me, this site is a work in progress."
 		buttonText = "Find out more"
 
 
