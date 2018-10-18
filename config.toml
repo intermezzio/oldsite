@@ -47,7 +47,7 @@ theme = "hugo-creative-theme"
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
+		headline    = "All about Me"
 		description = "[Lorem](//ddg.gg) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
 		buttonText  = "Get started!"
 
