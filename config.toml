@@ -76,7 +76,7 @@ theme = "hugo-creative-theme"
             title = "Made with Love"
             description = "You have to make your websites with love these days!"
 
-
+        [params.portfolio]
     # Portfolio modals
 	[params.portfolio.modal]
         client = "Client"
