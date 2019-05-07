@@ -11,7 +11,7 @@ googleAnalytics = ""
 
   # You can use Markdown for urls [text](//domain.tld/source)
   #
-  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
   # for more icons.
 
   # To provide more meta data for search engings feel free to add a few informations.
@@ -49,7 +49,7 @@ googleAnalytics = ""
     id = "about"
     type = "text"
     title = "Who am I"
-    description = "My name is Andrew Mascillaro, and I am a rising freshman at Olin College of Engineering. I am from Freehold, New Jersey. My favorite programming languages are JavaScript, Java, and Python. Apart from programming, I enjoy [chess](https://lichess.org/@/intermezzio) and speed memorization."
+    description = "My name is Andrew Mascillaro, and I am a rising freshman at Franklin W. Olin College of Engineering. I am from Freehold, New Jersey. My favorite programming languages are JavaScript, Java, and Python. Apart from programming, I enjoy [chess](https://lichess.org/@/intermezzio) and speed memorization."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic01.jpg"
@@ -59,7 +59,7 @@ googleAnalytics = ""
     id = "skills"
     type = "list"
     title = "What I do"
-    description = "In my free time, I like to make interesting programs. Some of my programs include a chemistry lab calculation site, calculus-teaching site, and a blog about my chess experiences. In addition, I have worked on a team to program an autonomous research drone using ROS."
+    description = "In my free time, I like to make interesting programs. Some of my programs include a chemistry lab calculation site, a calculus-teaching site, and a chess blog. In addition, I have worked on a team to program an autonomous research drone using ROS."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic02.jpg"
@@ -140,7 +140,7 @@ googleAnalytics = ""
       [[params.footer.social]]
         title = "Chess"
         icon = "fa-flag-checkered"
-        link = "https://lichess.org/@/intermezzio"
+        link = "https://chess.com/member/intermezzio"
 
       [[params.footer.social]]
         title = "Gihub"
@@ -150,11 +150,11 @@ googleAnalytics = ""
     # copyright
     #[params.footer.copyright.notice]
 
-      [[params.footer.copyright.notice]]
-        text = "© Untitled"
-
-      [[params.footer.copyright.notice]]
-        text = "Design: [HTML5UP](//html5up.net)"
-
-      [[params.footer.copyright.notice]]
-        text = "Demo Images: [Unsplash](//unsplash.com/)"
+#       [[params.footer.copyright.notice]]
+#         text = "© Andrew Mascillaro"
+# 
+#       [[params.footer.copyright.notice]]
+#         text = "Design: [HTML5UP](//html5up.net)"
+# 
+#       [[params.footer.copyright.notice]]
+#         text = "Images: [Unsplash](//unsplash.com/)"
