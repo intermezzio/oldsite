@@ -1,101 +1,160 @@
-baseurl = "https://intermezzio.github.io"
+# Site settings
+baseurl = "https://www.example.com"
 languageCode = "en-us"
 title = "Intermezzio"
-theme = "hugo-creative-theme"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
 
-	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Andrew Mascillaro"
+  description = "Your friendly programmer"
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more information take a look at the README.
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "amascillaro@gmail.com"
 
-	# To provide some metadata for search engines feel free to add some
-	# information about you and your website.
-	name = "Intermezzio"
-	description = "This is a test description"
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
+  backgroundpersection = true
 
-	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "Welcome"
+    description = "A look into [intermezzio's](https://github.com/intermezzio) coding adventures"
+    buttontext = "explore"
 
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "Who am I"
+    description = "My name is Andrew Mascillaro, and I am a rising freshman at Franklin W. Olin College of Engineering. I am from Freehold, New Jersey. My favorite programming languages are JavaScript, Java, and Python. Apart from programming, I enjoy [chess](https://lichess.org/@/intermezzio) and speed memorization."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pic01.jpg"
 
-	# Navigation
-	[params.navigation]
-		brand = "Intermezzio"
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "What I do"
+    description = "In my free time, I like to make interesting programs. Some of my programs include a chemistry lab calculation site, a calculus-teaching site, and a chess blog. In addition, I have worked on a team to program an autonomous research drone using ROS."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pic02.jpg"
 
-		[params.navigation.links]
-			about     = "About"
-			services  = "Services"
-			portfolio = "Projects"
-			contact   = "Contact"
+    [[params.block.item]]
+      icon = "fa-plane"
+      title = "Autonomous Drone"
 
+    [[params.block.item]]
+      icon = "fa-flask"
+      title = "Lab Calculator"
 
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Welcome to my Site!"
-		subtitle   = "[Lorem](//ddg.gg) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
-		buttonText = "Find out more"
+    [[params.block.item]]
+      icon = "fa-code"
+      title = "Calculus Site"
 
+    [[params.block.item]]
+      icon = "fa-flag-checkered"
+      title = "Chess Blog"
 
-	# About section
-	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//ddg.gg) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
+  # infos section
+  [[params.block]]
+    id = "infos"
+    type = "text"
+    title = "Employment"
+    description = "As a high school student, I have interned at iCIMS for software development, where I worked on localization. This summer, I will be a TA at MIT's Beaver Works Summer Institute, teaching a class for remote sensing on drones."
+    # the picture is stored at static/images/
+    picture = "pic03.jpg"
 
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is stored at static/images/
+#    picture = "pic04.jpg"
 
-	# Service section
-	[params.services]
-		headline = "At your service"
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
+    title = "Contact Me"
+    picture = "pic05.jpg"
 
-        [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
+    [params.block.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttontext = "send message"
 
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
+  # footer section
+  # this section includes last block and social icons
 
-		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+  [params.footer]
+    enable = true
 
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
+    # social icons
+    [params.footer.social_list]
+      enable = true
 
+      [[params.footer.social]]
+        title = "Linkedin"
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/in/andrew-mascillaro-7524aa179/"
 
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "https://www.facebook.com/andrew.mascillaro.7"
 
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
+      [[params.footer.social]]
+        title = "Lichess"
+        icon = "fa-flag-checkered"
+        link = "https://lichess.org/@/intermezzio"
 
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+      [[params.footer.social]]
+        title = "Chess"
+        icon = "fa-flag-checkered"
+        link = "https://chess.com/member/intermezzio"
 
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
+      [[params.footer.social]]
+        title = "Gihub"
+        icon = "fa-github"
+        link = "https://github.com/intermezzio"
 
+    # copyright
+    #[params.footer.copyright.notice]
+
+#       [[params.footer.copyright.notice]]
+#         text = "© Andrew Mascillaro"
+# 
+#       [[params.footer.copyright.notice]]
+#         text = "Design: [HTML5UP](//html5up.net)"
+# 
+#       [[params.footer.copyright.notice]]
+#         text = "Images: [Unsplash](//unsplash.com/)"
