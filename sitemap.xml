@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.intermezzio.github.io/categories/</loc>
+    <loc>https://github.com/intermezzio/intermezzio.github.io/blob/master/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.intermezzio.github.io/</loc>
+    <loc>https://github.com/intermezzio/intermezzio.github.io/blob/master/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.intermezzio.github.io/tags/</loc>
+    <loc>https://github.com/intermezzio/intermezzio.github.io/blob/master/tags/</loc>
     <priority>0</priority>
   </url>
   
