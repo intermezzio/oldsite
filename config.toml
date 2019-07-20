@@ -85,7 +85,7 @@ googleAnalytics = ""
     id = "infos"
     type = "text"
     title = "Employment"
-    description = "As a high school student, I have interned at iCIMS for software development, where I worked on localization. This summer, I will be a TA at MIT's Beaver Works Summer Institute, teaching a class for remote sensing on drones."
+    description = "As a high school student, I have interned at iCIMS for software development, where I worked on localization. Currently, I am a TA at MIT's Beaver Works Summer Institute, co-teaching a class for remote sensing with Raspberry Pis."
     # the picture is stored at static/images/
     picture = "pic03.jpg"
 
